@@ -25,4 +25,10 @@ module.exports = {
       filename: 'index.html',
     }),
   ],
+  devServer: {
+    open: true,
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    port: 9000,
+  },
 };
