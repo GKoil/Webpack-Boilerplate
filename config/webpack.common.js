@@ -4,12 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-  entry: path.resolve(__dirname, './src/index.js'),
-  output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'index.js',
-  },
-  mode: process.env.NODE_ENV || 'development',
+  entry: path.resolve(__dirname, '../src/index.js'),
   module: {
     rules: [
       {
@@ -19,18 +14,12 @@ module.exports = {
     ],
   },
   plugins: [
+    new CleanWebpackPlugin(),
     new LodashModuleReplacementPlugin,
     new HtmlWebpackPlugin({
       title: 'webpack Boilerplate',
-      template: path.resolve(__dirname, './src/template.html'),
+      template: path.resolve(__dirname, '../src/template.html'),
       filename: 'index.html',
     }),
-    new CleanWebpackPlugin(),
   ],
-  devServer: {
-    open: true,
-    contentBase: path.join(__dirname, 'dist'),
-    compress: true,
-    port: 9000,
-  },
 };

@@ -1,5 +1,5 @@
 start:
-	node_modules/.bin/webpack serve
+	node_modules/.bin/webpack serve --config ./config/webpack.dev.js
 
 build:
-	npx webpack
+	npx webpack --config ./config/webpack.prod.js
