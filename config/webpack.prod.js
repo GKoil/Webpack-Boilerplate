@@ -5,7 +5,7 @@ const common = require('./webpack.common.js');
 module.exports = merge(common, {
   mode: 'production',
   output: {
-    path: path.resolve(__dirname, '../public'),
+    path: path.resolve(__dirname, '../build'),
     filename: 'index.js',
   },
   plugins: [
