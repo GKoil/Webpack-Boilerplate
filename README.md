@@ -11,6 +11,7 @@
   * [Production mode](#Production)
 * [Dependencies](#Dependencies)
   * [Webpack](#Webpack)
+  * [Babel](#Babel)
   * [Loaders](#Loaders)
   * [Plugins](#Plugins)
   * [Linter](#Linter)
@@ -55,6 +56,12 @@ npm run build
 - [`webpack-dev-server`](https://github.com/webpack/webpack-dev-server) - Server for the development mode
 - [`webpack-merge`](https://github.com/survivejs/webpack-merge) - Configurate development mode and production mode
 
+### Babel
+
+- [`@babel/core`](https://www.npmjs.com/package/@babel/core) - Babel
+- [`@babel/preset-env`](https://babeljs.io/docs/en/babel-preset-env) - Smart preset that allows you to use the latest JavaScript without needing to micromanage which syntax transforms
+- [`core-js`](https://github.com/zloirock/core-js) - Modular standard library for JavaScript. Includes polyfills for ECMAScript up to 2021
+
 ### Loaders
 - [`sass-loader`](https://webpack.js.org/loaders/sass-loader/) - Load SCSS and compile to CSS
   - [`node-sass`](https://github.com/sass/node-sass) - Node Sass
@@ -63,8 +70,12 @@ npm run build
 ### Plugins
 - [`clean-webpack-plugin`](https://github.com/johnagan/clean-webpack-plugin) - Clean the build folder
 - [`html-webpack-plugin`](https://github.com/jantimon/html-webpack-plugin) - The plugin will generate an HTML5 file from a template
+- [`copy-webpack-plugin`](https://github.com/webpack-contrib/copy-webpack-plugin) - Copy files from src to build directory
+- [`mini-css-extract-plugin`](https://github.com/webpack-contrib/mini-css-extract-plugin) - Extract CSS into separate files in build mode
 
 ### Linter
+- [`eslint`](https://github.com/eslint/eslint) - Eslint
+- [`eslint-config-airbnb-base`](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base) - Config from airbnb
 
 ## Author
 - [Kirill Grigorev](https://github.com/GKoil)
