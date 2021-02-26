@@ -1,8 +1,5 @@
 {
-  "name": "test-webpack",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
+  "private": "true",
   "browserslist": [
     "ie 11",
     "last 2 chrome versions",
