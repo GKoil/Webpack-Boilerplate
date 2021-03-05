@@ -67,6 +67,10 @@ npm run build
   - [`node-sass`](https://github.com/sass/node-sass) - Node Sass
 - [`css-loader`](https://webpack.js.org/loaders/css-loader/) - Resolve CSS imports
 - [`style-loader`](https://webpack.js.org/loaders/style-loader/) - Inject CSS into the DOM
+- [`postcss-loader`](https://github.com/webpack-contrib/postcss-loader/) - Loader to process CSS with PostCSS
+  - [`postcss`](https://github.com/postcss/postcss/) - PostCSS is a tool for transforming styles with JS plugins
+  - [`postcss-preset-env`](https://github.com/jonathantneal/postcss-preset-env) - allows you to use future CSS features today.
+  - [`autoprefixer`](https://github.com/postcss/autoprefixer) - adds vendor prefixes, using data from Can I Use.
 ### Plugins
 - [`clean-webpack-plugin`](https://github.com/johnagan/clean-webpack-plugin) - Clean the build folder
 - [`html-webpack-plugin`](https://github.com/jantimon/html-webpack-plugin) - The plugin will generate an HTML5 file from a template
